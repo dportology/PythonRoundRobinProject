@@ -1,3 +1,11 @@
+#when each job completes,
+#arrival time = (-.2 * log(1 - rand)) so next arrival time = i + interarrival
+#on another test, replace the -.2 with 2
+#sertive time =  (2 + (5 - 2) * rand()) uniform distribution min 2 max 5 (avg 3.5)
+
+#at the end of first quantum, do calculations to see if process has arrived
+#do quantum = 1. stop simulation when 100th job completes.
+
 import math
 import random
 
@@ -5,7 +13,7 @@ import random
 ready_queue = []                    # to hold all processes
 id = 0                              # id to assign to proceses
 clock = 0                           # system clock
-quantums = 100                       # how many quantums to execute for
+quantums = 100                      # how many quantums to execute for
 quantum_length = 10                 # how long a quantum lasts
 context_switch = 0                  # time it takes to switch processes
 chance_to_generate_process = .2     # 0.0 - 1.0
