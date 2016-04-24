@@ -23,10 +23,10 @@ processes_completed = 0
 
 total_service_time = 0
 
-quantums                        = int(raw_input('How many quantums do you wish to execute for?'))
-quantum_length                  = int(raw_input('How long is a quantum? '))
-chance_to_generate_process      = float(raw_input('How likely is a process to arrive every cycle? (0.0 - 1.0)'))
-context_switch                  = int(raw_input('How long does a context switch penalty last?'))
+#quantums                        = int(raw_input('How many quantums do you wish to execute for?'))
+#quantum_length                  = int(raw_input('How long is a quantum? '))
+#chance_to_generate_process      = float(raw_input('How likely is a process to arrive every cycle? (0.0 - 1.0)'))
+#context_switch                  = int(raw_input('How long does a context switch penalty last?'))
 
 
 def generate_process():
